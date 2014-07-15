@@ -50,7 +50,23 @@ function gac() {
   git add -A .;
   git commit -m "$*"
 }
-alias gr="git reset HEAD~1"
+function gr() {
+  if [ $# -ne 0 ]
+    then
+    git reset $1
+  else
+    git reset HEAD~1
+  fi
+}
+function grh() {
+  if [ $# -ne 0 ]
+    then
+    git reset --hard $1
+  else
+    git reset --hard HEAD~1
+  fi
+}
+
 # alias gp="git push "
 # alias gpo="git push origin "
 function gp() {
