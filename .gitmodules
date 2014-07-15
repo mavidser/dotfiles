@@ -1,3 +1,6 @@
 [submodule "master"]
 	path = master
 	url = https://github.com/mavidser/tmux-monochrome-colors
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/mavidser/tmux-monochrome-colors
