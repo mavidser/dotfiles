@@ -1,5 +1,5 @@
 #tmux 256 colors
-alias tmux="TERM=screen-256color tmux"
+alias tmux="TERM=screen-256color-bce tmux"
 
 #python serve
 alias serve="python -m SimpleHTTPServer"
