@@ -1,0 +1,40 @@
+{
+	"color_scheme": "Packages/Color Scheme/Monokai - Spacegray.tmTheme",
+	"detect_indentation": true,
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": false,
+	"file_exclude_patterns":
+	[
+		"*.min.js",
+		"*.min.css",
+		"*.pyc"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".cache",
+		"log",
+		"bin",
+		"build",
+		"tmp",
+		"node_modules"
+	],
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"itg_small_tabs": true,
+	"tab_size": 2,
+	"theme": "Spacegray Eighties.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
