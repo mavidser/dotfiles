@@ -1,0 +1,30 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"Autoprefixer",
+		"ColorPicker",
+		"Emmet",
+		"Gist",
+		"Git",
+		"GitGutter",
+		"Github Tools",
+		"Grunt",
+		"Gutter Color",
+		"Jade",
+		"Jinja2",
+		"LESS",
+		"Liquid",
+		"Markdown Preview",
+		"Nodejs",
+		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-cppcheck",
+		"SublimeLinter-csslint",
+		"SublimeLinter-flake8",
+		"SublimeLinter-jshint",
+		"Terminal",
+		"Theme - Spacegray"
+	]
+}

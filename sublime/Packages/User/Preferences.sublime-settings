@@ -1,8 +1,9 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/Color Scheme/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/Monokai Extended.tmTheme",
 	"detect_indentation": true,
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
@@ -31,10 +32,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"SublimeClang",
-		"Vintage",
-		"Python Coverage",
-		"Color Highlighter"
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
@@ -43,9 +41,14 @@
 	],
 	"indent_to_bracket": true,
 	"itg_small_tabs": true,
+	"rulers":
+	[
+		79
+	],
 	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true
 }
+

@@ -13,6 +13,7 @@ function code() {
     cd $1;
   fi
 }
+
 alias study="cd ~/Desktop/Study"
 
 #Network Telnet
@@ -70,12 +71,18 @@ alias ai="sudo apt-get install "
 
 #Git commands
 alias gs="git status"
-alias ga="git add"
 alias gl="git log --oneline"
 alias gls="git log --oneline --stat"
 alias gd="git diff"
 alias gds="git diff --stat"
-alias ga="git add -A ."
+function ga() {
+  if [ $# -ne 0 ]
+    then
+    git add $*
+  else
+    git add -A .;
+  fi
+}
 function gc() {
   git commit -m "$*"
 }
