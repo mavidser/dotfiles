@@ -82,3 +82,4 @@ source /home/sid/GAE/google-cloud-sdk/path.zsh.inc
 
 source ~/.aliases
 
+export TERM=xterm-256color

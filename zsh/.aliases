@@ -133,3 +133,4 @@ alias chromex="google-chrome --disable-web-security"
 alias wget="wget --no-check-certificate"
 alias venv="source bin/activate"
 alias vend="deactivate"
+alias git=hub
