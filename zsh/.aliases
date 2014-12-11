@@ -1,5 +1,6 @@
 #tmux 256 colors
 alias tmux="TERM=screen-256color tmux"
+alias vim="TERM=screen-256color vim"
 
 #python serve
 alias serve="python -m SimpleHTTPServer"
@@ -134,3 +135,4 @@ alias wget="wget --no-check-certificate"
 alias venv="source bin/activate"
 alias vend="deactivate"
 alias git=hub
+alias dracula="sudo python ~/Desktop/Code/Dracula/dracula.py"
