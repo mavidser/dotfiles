@@ -83,3 +83,5 @@ source /home/sid/GAE/google-cloud-sdk/path.zsh.inc
 source ~/.aliases
 
 export TERM=xterm-256color
+
+export NODE_PATH=/usr/local/lib/node_modules/gulp/bin/gulp.js
