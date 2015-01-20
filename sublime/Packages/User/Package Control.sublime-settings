@@ -1,8 +1,18 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2",
+		"ssl-linux"
+	],
 	"installed_packages":
 	[
 		"Alignment",
 		"Autoprefixer",
+		"ChannelRepositoryTools",
 		"ColorPicker",
 		"Emmet",
 		"Gist",
@@ -11,12 +21,15 @@
 		"Github Tools",
 		"Grunt",
 		"Gutter Color",
+		"HTML-CSS-JS Prettify",
 		"Jade",
 		"Jinja2",
 		"LESS",
 		"Liquid",
+		"Markdown Extended",
 		"Markdown Preview",
 		"Nodejs",
+		"Package Control",
 		"Sass",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
@@ -24,6 +37,7 @@
 		"SublimeLinter-csslint",
 		"SublimeLinter-flake8",
 		"SublimeLinter-jshint",
+		"SublimeREPL",
 		"Terminal",
 		"Theme - Spacegray"
 	]

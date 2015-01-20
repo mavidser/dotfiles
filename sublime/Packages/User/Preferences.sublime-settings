@@ -21,7 +21,8 @@
 		"bin",
 		"build",
 		"tmp",
-		"node_modules"
+		"node_modules",
+		".sass-cache"
 	],
 	"font_face": "Source Code Pro",
 	"font_options":
@@ -32,7 +33,9 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"SublimeLinter",
+		"Vintage",
+		"Nodejs"
 	],
 	"indent_guide_options":
 	[
@@ -51,4 +54,3 @@
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true
 }
-
