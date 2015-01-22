@@ -17,16 +17,8 @@ function code() {
 
 alias study="cd ~/Desktop/Study"
 
-#Network Telnet
-alias jtel="telnet 192.168.4.3 -l 121342"
-
-function jtelsend() {
-  nc -w 3 192.168.4.3 1234 < $1
-}
-
-function jtelget() {
-  nc -l -p 1234 > $1
-}
+#Network SSH
+alias jssh="ssh 121342@192.168.4.3"
 
 #ls
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
@@ -108,8 +100,8 @@ function grh() {
   fi
 }
 
-# alias gp="git push "
-# alias gpo="git push origin "
+alias gphm="git push heroku master"
+
 function gp() {
   if [ $2 ]
     then
@@ -126,6 +118,16 @@ function gcp() {
   git commit -m "$*";
   git push;
 }
+
+function retry() {
+  echo $*
+  until $*; do
+    echo Error occured, retrying in 10 seconds...
+    sleep 10
+  done
+
+}
+
 alias gpu="git pull"
 alias gco="git checkout "
 
