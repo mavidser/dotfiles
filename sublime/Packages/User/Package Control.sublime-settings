@@ -2,16 +2,11 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2",
-		"ssl-linux"
-	],
 	"installed_packages":
 	[
 		"Alignment",
 		"Autoprefixer",
+		"Browser Integration",
 		"ChannelRepositoryTools",
 		"ColorPicker",
 		"Emmet",
@@ -30,7 +25,9 @@
 		"Markdown Preview",
 		"Nodejs",
 		"Package Control",
+		"Prolog",
 		"Sass",
+		"Sublime Input",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
 		"SublimeLinter-cppcheck",

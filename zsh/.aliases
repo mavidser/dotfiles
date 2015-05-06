@@ -138,3 +138,5 @@ alias venv="source bin/activate"
 alias vend="deactivate"
 alias git=hub
 alias dracula="sudo python ~/Desktop/Code/Dracula/dracula.py"
+alias fuck='$(thefuck $(fc -ln -1))'
+alias ccat='pygmentize -g'
