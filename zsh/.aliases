@@ -140,3 +140,4 @@ alias git=hub
 alias dracula="sudo python ~/Desktop/Code/Dracula/dracula.py"
 alias fuck='$(thefuck $(fc -ln -1))'
 alias ccat='pygmentize -g'
+alias 'net?'='ping 8.8.8.8 -c 4'
