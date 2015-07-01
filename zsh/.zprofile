@@ -44,6 +44,7 @@ path=(
   /usr/local/{bin,sbin}
   ~/.bin
   ~/.sbt/bin
+  ~/anaconda/bin
   ~/Android/sdk/platform-tools:$PATH
   $path
 )
@@ -85,3 +86,6 @@ source ~/.aliases
 export TERM=xterm-256color
 
 export NODE_PATH=/usr/local/lib/node_modules/gulp/bin/gulp.js
+
+export PYTHONIOENCODING=utf-8
+
