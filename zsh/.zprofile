@@ -45,6 +45,7 @@ path=(
   ~/.bin
   ~/.sbt/bin
   ~/anaconda/bin
+  ~/gocode/bin
   ~/Android/sdk/platform-tools:$PATH
   $path
 )
@@ -88,4 +89,12 @@ export TERM=xterm-256color
 export NODE_PATH=/usr/local/lib/node_modules/gulp/bin/gulp.js
 
 export PYTHONIOENCODING=utf-8
+
+export GOPATH=/home/sid/gocode
+
+# ^Xe for editing and running commands
+
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '^Xe' edit-command-line
 
