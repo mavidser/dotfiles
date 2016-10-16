@@ -1,6 +1,9 @@
 #
 # Executes commands at login pre-zshrc.
 #
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
 #
 # Browser
@@ -35,7 +38,7 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the the list of directories that cd searches.
 cdpath=(
-  ~/Desktop/Code
+  ~/Development
   $cdpath
 )
 
@@ -43,10 +46,9 @@ cdpath=(
 path=(
   /usr/local/{bin,sbin}
   ~/.bin
-  ~/.sbt/bin
-  ~/anaconda/bin
-  ~/gocode/bin
-  ~/Android/sdk/platform-tools:$PATH
+  ~/Android/android-studio/gradle/gradle-2*/bin
+  ~/Android/sdk/platform-tools
+  ~/Android/ndk
   $path
 )
 
@@ -61,8 +63,9 @@ path=(
 export LESS='-F -g -i -M -R -X -z-4'
 
 # Set the Less input preprocessor.
-if (( $+commands[lesspipe.sh] )); then
-  export LESSOPEN='| /usr/bin/env lesspipe.sh %s 2>&-'
+# Try both `lesspipe` and `lesspipe.sh` as either might exist on a system.
+if (( $#commands[(i)lesspipe(|.sh)] )); then
+  export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
 #
@@ -70,31 +73,24 @@ fi
 #
 
 if [[ ! -d "$TMPDIR" ]]; then
-  export TMPDIR="/tmp/$USER"
+  export TMPDIR="/tmp/$LOGNAME"
   mkdir -p -m 700 "$TMPDIR"
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
-if [[ ! -d "$TMPPREFIX" ]]; then
-  mkdir -p "$TMPPREFIX"
-fi
-
-# The next line updates PATH for the Google Cloud SDK.
-source /home/sid/GAE/google-cloud-sdk/path.zsh.inc
 
 source ~/.aliases
 
-export TERM=xterm-256color
+source ~/.keys/access_keys
 
-export NODE_PATH=/usr/local/lib/node_modules/gulp/bin/gulp.js
-
-export PYTHONIOENCODING=utf-8
-
-export GOPATH=/home/sid/gocode
+export TERM=screen-256color
+export LC_ALL=en_US.UTF-8
+export env=development
+export GOPATH=~/.golang
 
 # ^Xe for editing and running commands
 
 autoload edit-command-line
 zle -N edit-command-line
 bindkey '^Xe' edit-command-line
-
+export QT_QPA_PLATFORMTHEME="qt5ct"

@@ -8,17 +8,12 @@ alias serve="python -m SimpleHTTPServer"
 #Important folders
 
 function code() {
-  cd ~/Desktop/Code;
+  cd ~/Development;
   if [ $# -ne 0 ]
     then
     cd $1;
   fi
 }
-
-alias study="cd ~/Desktop/Study"
-
-#Network SSH
-alias jssh="ssh 121342@192.168.4.3"
 
 #ls
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
@@ -60,7 +55,7 @@ extract () {
 
 #Aptitude
 alias au="sudo apt-get update"
-alias ai="sudo apt-get install "
+alias ai="sudo apt-get -y install "
 
 #Git commands
 alias gs="git status"
@@ -101,6 +96,7 @@ function grh() {
 }
 
 alias gphm="git push heroku master"
+alias gpom="git push origin master"
 
 function gp() {
   if [ $2 ]
@@ -141,4 +137,17 @@ alias dracula="sudo python ~/Desktop/Code/Dracula/dracula.py"
 alias fuck='$(thefuck $(fc -ln -1))'
 alias ccat='pygmentize -g'
 alias 'net?'='ping 8.8.8.8 -c 4'
-alias aws='proxychains ssh -i "/home/sid/.ssh/SIDVERMA_KEY_1.pem" ubuntu@aws.sidverma.net'
+alias vnc='ssh -i "/home/sid/.ssh/SIDKEY.pem" ubuntu@vnc.sidverma.net'
+alias usbt='adb shell su -c service call connectivity 30 i32 1'
+FLAGS=$(xset -q | awk 'NR==2' | awk '{ print $10 }')
+function scrlk() {
+  if [ "$FLAGS" = ffffe7fe ]; then
+    xset led off
+  else
+    xset led on
+  fi
+}
+
+function canew() {
+  ssh -i "/home/sid/.ssh/canew.pem" ec2-user@$*
+}
